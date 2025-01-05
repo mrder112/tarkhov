@@ -1,37 +1,78 @@
 ---
 layout: post # Шаблон страницы
-title:  "My works 2022-2024" # Заголовок поста
-date:   2022-08-29 09:29:20 +0700 # Дата и время публикации
+title:  "Project robot" # Заголовок поста
+date:   2023-05-29 09:29:20 +0700 # Дата и время публикации
 categories: jekyll update # Категории поста
 usemathjax: true # Включение поддержки математических формул
 ---
 
 
-Вы найдете этот пост в директории `_posts`. Отредактируйте его и пересоберите сайт, чтобы увидеть изменения. Вы можете пересобрать сайт разными способами, но самый распространенный - запустить команду `jekyll serve`, которая запускает веб-сервер и автоматически обновляет сайт при изменении файлов.
+Работа над созданием 3D модели робота с обтекаемым корпусом.
 <figure>
-<img src="/apa-itu-shell/kernel.png" alt="kernel central of operating system">
-<figcaption>Fig 2. bagan kernel.</figcaption>
+<img src="/assets\img\robot_post1/1.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+</figure>
+<figure>
+<img src="/assets\img\robot_post1/2.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+</figure>
+<figure>
+<img src="/assets\img\robot_post1/3.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
 </figure>
 
+<!-- Модальное окно для увеличенного изображения -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
 
-Jekyll требует, чтобы файлы постов были названы в следующем формате:
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
 
-`YEAR-MONTH-DAY-title.MARKUP`
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+}
 
-Где `YEAR` - четырехзначное число года, `MONTH` и `DAY` - двузначные числа месяца и дня, а `MARKUP` - расширение файла, определяющее используемый формат. После этого добавьте необходимую вводную часть (front matter). Посмотрите исходный код этого поста, чтобы понять, как это работает.
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-Jekyll также предоставляет мощную поддержку фрагментов кода:
+.zoomable {
+  cursor: pointer;
+}
+</style>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<script>
+function openModal(img) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
 
-Ознакомьтесь с [документацией Jekyll][jekyll-docs] для получения дополнительной информации о возможностях Jekyll. Сообщайте обо всех ошибках/пожеланиях в [GitHub репозиторий Jekyll][jekyll-gh]. Если у вас есть вопросы, вы можете задать их на форуме [Jekyll Talk][jekyll-talk].
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home # Ссылка на документацию
-[jekyll-gh]:   https://github.com/jekyll/jekyll # Ссылка на GitHub репозиторий
-[jekyll-talk]: https://talk.jekyllrb.com/ # Ссылка на форум
+В проекте были использованны программы:
+<img src="/assets/img/icon/keyshot.png" alt="keyshot icon" style="width:20px;"> Keyshot
+<img src="/assets/img/icon/cinema4d.png" alt="cinema4d icon" style="width:20px;"> Cinema 4D 
+<img src="/assets/img/icon/photoshop.png" alt="photoshop icon" style="width:20px;"> Photoshop
