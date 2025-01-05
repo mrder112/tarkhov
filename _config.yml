@@ -1,46 +1,45 @@
-# Site settings
-title: Klise Theme # site title
-description: >- # site description
+# Основные настройки сайта
+title: Pavel Tarkhov # название сайта
+description: >- # описание сайта
   He's writing in Bahasa about web technology and experience as a journal 
   for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
-lang: en-US # default lang
-timezone: Asia/Jakarta # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
-mode: dark # default theme "dark" | "light"
+lang: en-US # язык сайта по умолчанию
+timezone: Asia/Jakarta # часовой пояс
+image: assets/img/ogp.png # изображение для Open Graph протокола
+mode: dark # тема оформления "dark" или "light"
 
-# Profile settings
+# Настройки профиля
 author:
-  name: Pavel Tarkhov # author name
-  bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
-  username: username # general username
-  github: github_username # github username
-  twitter: twitter_username # twitter username
-  facebook: facebook_username # facebook username
-  email: your-email@email.com # email adress
-  avatar: /assets/img/avatar.jpg # change with your own avatar
+  name: Pavel Tarkhov # имя автора
+  bio: >- # описание автора
+    Это мой сайт с портфолио моих работ в разных отраслях связанных с дизайном, видеомонтажом и 3D моделированием.
+    <a href="https://t.me/pavel_tarkhov" target="_blank" rel="noopener">Мой Telegram</a>.
+  username: username # общее имя пользователя
+  github: github_username # имя пользователя GitHub
+  Telegram: pavel_tarkhov # имя пользователя Telegram
+  facebook: facebook_username # имя пользователя Facebook
+  email: your-email@email.com # адрес электронной почты
+  avatar: /assets/img/avatar.jpg # путь к аватару
 
-# URL settings
-url: "https://klise.now.sh" #
-baseurl:
-permalink: /:title/
-google_analytics: # leave it blank if not wish
-fb_appid:
+# Настройки URL
+url: "https://klise.now.sh" # основной URL сайта
+baseurl: # базовый URL (если сайт в подкаталоге)
+permalink: /:title/ # формат ссылок на посты
+google_analytics: # ID Google Analytics
+fb_appid: # ID приложения Facebook
 
-# Collection setting
+# Настройки коллекций
 collections:
   posts:
-    output: true
+    output: true # генерировать страницы для постов
 
-# Markdown settings
-markdown: kramdown
-highlighter: rouge
+# Настройки Markdown
+markdown: kramdown # процессор markdown
+highlighter: rouge # подсветка синтаксиса
 kramdown:
   syntax_highlighter: rouge
 
-# Default front matter
+# Настройки по умолчанию для страниц
 defaults:
   - scope:
       path: ""
@@ -48,29 +47,30 @@ defaults:
       layout: post
       comments: false
 
-# Jekyll Compose default front matter
+# Настройки Jekyll Compose для новых постов
 jekyll_compose:
-  post_default_front_matter:
+  post_default_front_matter: # значения по умолчанию для новых постов
     modified:
     tags: []
     description:
-  draft_default_front_matter:
+  draft_default_front_matter: # значения по умолчанию для черновиков
     modified:
     tags: []
     description:
 
-# Homepage limit posts
+# Ограничение количества постов на главной
 number_of_posts: 5
 
-# Build settings
-# theme: klise
+# Настройки сборки
 sass:
-  style: compressed
+  style: compressed # сжатие CSS
 
+# Файлы для включения
 include:
   - _redirects
   - .htaccess
 
+# Файлы для исключения из сборки
 exclude:
   - CNAME
   - Gemfile
@@ -85,8 +85,8 @@ exclude:
   - klise-*.gem
   - klise.gemspec
 
-# Plugins
+# Плагины Jekyll
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-postfiles
+  - jekyll-feed # RSS-лента
+  - jekyll-sitemap # генерация карты сайта
+  - jekyll-postfiles # поддержка файлов в постах

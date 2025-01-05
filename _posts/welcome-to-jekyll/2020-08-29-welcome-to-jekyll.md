@@ -1,22 +1,26 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-08-29 09:29:20 +0700
-categories: jekyll update
-usemathjax: true
+layout: post # Шаблон страницы
+title:  "My works 2022-2024" # Заголовок поста
+date:   2022-08-29 09:29:20 +0700 # Дата и время публикации
+categories: jekyll update # Категории поста
+usemathjax: true # Включение поддержки математических формул
 ---
 
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Вы найдете этот пост в директории `_posts`. Отредактируйте его и пересоберите сайт, чтобы увидеть изменения. Вы можете пересобрать сайт разными способами, но самый распространенный - запустить команду `jekyll serve`, которая запускает веб-сервер и автоматически обновляет сайт при изменении файлов.
+<figure>
+<img src="/apa-itu-shell/kernel.png" alt="kernel central of operating system">
+<figcaption>Fig 2. bagan kernel.</figcaption>
+</figure>
 
 
-Jekyll requires blog post files to be named according to the following format:
+Jekyll требует, чтобы файлы постов были названы в следующем формате:
 
 `YEAR-MONTH-DAY-title.MARKUP`
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Где `YEAR` - четырехзначное число года, `MONTH` и `DAY` - двузначные числа месяца и дня, а `MARKUP` - расширение файла, определяющее используемый формат. После этого добавьте необходимую вводную часть (front matter). Посмотрите исходный код этого поста, чтобы понять, как это работает.
 
-Jekyll also offers powerful support for code snippets:
+Jekyll также предоставляет мощную поддержку фрагментов кода:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -26,9 +30,8 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Ознакомьтесь с [документацией Jekyll][jekyll-docs] для получения дополнительной информации о возможностях Jekyll. Сообщайте обо всех ошибках/пожеланиях в [GitHub репозиторий Jekyll][jekyll-gh]. Если у вас есть вопросы, вы можете задать их на форуме [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-
+[jekyll-docs]: https://jekyllrb.com/docs/home # Ссылка на документацию
+[jekyll-gh]:   https://github.com/jekyll/jekyll # Ссылка на GitHub репозиторий
+[jekyll-talk]: https://talk.jekyllrb.com/ # Ссылка на форум
