@@ -8,31 +8,85 @@ usemathjax: true # Включение поддержки математичес�
 
 
 <div style="text-align: center;">
-Работа над созданием 3D визуализации скейтпарка.
+<h2>Работа над созданием 3D визуализации скейтпарка</h2>
+
+<p>В данном проекте была разработана детальная 3D визуализация современного скейтпарка. 
+Особое внимание было уделено реалистичности освещения и материалов.</p>
 </div>
-<figure>
-<img src="/assets\img\skatepark/1.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-<figure>
-<img src="/assets\img\skatepark/2.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-<figure>
-<img src="/assets\img\skatepark/3.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-<figure>
-<img src="/assets\img\skatepark/4.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-<figure>
-<img src="/assets\img\skatepark/5.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-<figure>
-<img src="/assets\img\skatepark/6.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
+
+<div class="gallery">
+  <figure>
+    <img src="/assets\img\skatepark/1.jpg" alt="Общий вид скейтпарка" class="zoomable" onclick="openModal(this)">
+    <figcaption>Общий вид скейтпарка</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/assets\img\skatepark/2.jpg" alt="Рампа и перила" class="zoomable" onclick="openModal(this)">
+    <figcaption>Рампа и перила</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/assets\img\skatepark/3.jpg" alt="Зона для трюков" class="zoomable" onclick="openModal(this)">
+    <figcaption>Зона для трюков</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/assets\img\skatepark/4.jpg" alt="Детали конструкции" class="zoomable" onclick="openModal(this)">
+    <figcaption>Детали конструкции</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/assets\img\skatepark/5.jpg" alt="Вечернее освещение" class="zoomable" onclick="openModal(this)">
+    <figcaption>Вечернее освещение</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/assets\img\skatepark/6.jpg" alt="Общий план территории" class="zoomable" onclick="openModal(this)">
+    <figcaption>Общий план территории</figcaption>
+  </figure>
+</div>
+
 <!-- Модальное окно для увеличенного изображения -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modalImage">
 </div>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: translateY(-5px);
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery figcaption {
+  padding: 10px;
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+  font-size: 0.9em;
+}
+</style>
 
 <style>
 .modal {
