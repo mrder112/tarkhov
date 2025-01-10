@@ -4,127 +4,146 @@ permalink: /3d/
 layout: page
 ---
 
-<div class="back-container">
+<div class="gallery-container">
     <a href="/gallery/" class="back-button">Вернуться в галерею</a>
-        <figure>
-        <img src="/assets\img\robot_post1/2.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+    
+    <div class="gallery-grid">
+        <figure class="gallery-item">
+            <img src="/assets/img/robot_post1/2.png" alt="3D модель робота" class="zoomable" onclick="openModal(this)">
         </figure>
-        <figure>
-        <img src="/assets\img\robot_spider/4.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+        <figure class="gallery-item">
+            <img src="/assets/img/robot_spider/4.jpg" alt="3D модель паука-робота" class="zoomable" onclick="openModal(this)">
         </figure>
-        <figure>
-        <img src="/assets\img\classroom/4.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+        <figure class="gallery-item">
+            <img src="/assets/img/classroom/4.png" alt="3D модель класса" class="zoomable" onclick="openModal(this)">
         </figure>
-        <figure>
-        <img src="/assets\img\skatepark/1.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+        <figure class="gallery-item">
+            <img src="/assets/img/skatepark/1.jpg" alt="3D модель скейтпарка" class="zoomable" onclick="openModal(this)">
         </figure>
+    </div>
 
-        <!-- Модальное окно для увеличенного изображения -->
-        <div id="imageModal" class="modal">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <img class="modal-content" id="modalImage">
-        </div>
+    <!-- Модальное окно для увеличенного изображения -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
 
-        <style>
-        .modal {
-          display: none;
-          position: fixed;
-          z-index: 999;
-          padding-top: 50px;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0,0,0,0.9);
-        }
+    <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+    }
 
-        .modal-content {
-          margin: auto;
-          display: block;
-          max-width: 90%;
-          max-height: 90vh;
-        }
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90vh;
+    }
 
-        .close {
-          position: absolute;
-          right: 35px;
-          top: 15px;
-          color: #f1f1f1;
-          font-size: 40px;
-          font-weight: bold;
-          cursor: pointer;
-        }
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-        /* Добавляем медиа-запрос для мобильных устройств */
-        @media screen and (max-width: 480px) {
-          .modal {
-            padding-top: 20px;
-          }
-          
-          .close {
-            position: fixed;
-            right: 50%;
-            transform: translateX(50%);
-            top: auto;
-            bottom: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 5px 15px;
-            border-radius: 20px;
-          }
-        }
+    /* Добавляем медиа-запрос для мобильных устройств */
+    @media screen and (max-width: 480px) {
+      .modal {
+        padding-top: 20px;
+      }
+      
+      .close {
+        position: fixed;
+        right: 50%;
+        transform: translateX(50%);
+        top: auto;
+        bottom: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px 15px;
+        border-radius: 20px;
+      }
+    }
 
-        .zoomable {
-            cursor: pointer;
-        }
-        </style>
+    .zoomable {
+        cursor: pointer;
+    }
+    </style>
 
-        <script>
-        function openModal(img) {
-          var modal = document.getElementById("imageModal");
-          var modalImg = document.getElementById("modalImage");
-          modal.style.display = "block";
-          modalImg.src = img.src;
-        }
+    <script>
+    function openModal(img) {
+      var modal = document.getElementById("imageModal");
+      var modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    }
 
-        function closeModal() {
-          document.getElementById("imageModal").style.display = "none";
-        }
-        </script>
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+    </script>
 </div>
 
 <style>
-    .back-container {
+    .gallery-container {
         width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .gallery-item {
+        margin: 0;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
     }
 
     .back-button {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 12px 24px;
         text-decoration: none;
-        border-radius: 4px;
-        margin: 20px 0;
-        font-size: 16px;
+        border-radius: 8px;
+        font-weight: 500;
         transition: all 0.3s ease;
     }
 
-    [data-theme="light"] .back-button {
-        background-color: #e0e0e0;
-        color: #333;
-    }
-    
-    [data-theme="light"] .back-button:hover {
-        background-color: #d0d0d0;
+    [data-theme="light"] .gallery-item {
+        background: #fff;
     }
 
-    [data-theme="dark"] .back-button {
-        background-color: #333;
-        color: white;
-    }
-    
-    [data-theme="dark"] .back-button:hover {
-        background-color: #555;
+    [data-theme="dark"] .gallery-item {
+        background: #2a2a2a;
     }
 
     /* Мобильные устройства */
