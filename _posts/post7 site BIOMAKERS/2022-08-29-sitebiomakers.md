@@ -1,7 +1,7 @@
 ---
 layout: post # Шаблон страницы
 title:  "Проект разработки сайта 'Bio Makers'" # Заголовок поста
-date:   2024-08-16 09:29:20 +0700 # Дата и время публикации
+date:   2024-06-19 09:29:20 +0700 # Дата и время публикации
 categories: jekyll update # Категории поста
 usemathjax: true # Включение поддержки математических формул
 ---
@@ -12,6 +12,9 @@ usemathjax: true # Включение поддержки математичес�
 
 <p>В данном проекте я занимался разработкой сайта для определенной компании с использованием нейросетей.
 Это сайт мини-игра в которой можно создать своего персонажа и его мир. Данный сайт сделан в <img src="/assets/img/icon/figma.png" alt="figma icon" style="width:20px;"> <a href="https://www.figma.com/proto/GOYqog2BZTLQkIyoEWx1yG/BioMakers?node-id=44-241&starting-point-node-id=44%3A60&t=aKosCjHeXEPBRsoa-1" target="_blank">Figma</a> так же там можно лично зайти и протестировать его!</p>
+</div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <iframe src="https://www.youtube.com/embed/x2d4giO-_GM?si=LbmF8rf0vCAB_aYm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
 <figure>
 <img src="/assets\img\biomakers/0.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">

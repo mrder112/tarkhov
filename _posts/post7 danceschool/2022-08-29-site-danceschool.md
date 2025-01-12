@@ -13,9 +13,47 @@ usemathjax: true # Включение поддержки математичес�
 <p>В данном проекте я занимался разработкой сайта для определенной компании.</p>
 </div>
 <p>Пк версия сайта</p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe src="https://vkvideo.ru/video_ext.php?oid=159132079&id=456244332&hd=2&hash=4b16f93a7c8ced75&autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <iframe src="https://www.youtube.com/embed/khmUt3H4bYU?si=L1a8303tZRM2lMdT&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
+<div class="project-description">
+    <img src="/assets/img/schooldance/1.png" alt="Описание изображения" style="max-width: 100%; height: auto;" class="zoomable" onclick="openModal(this)">
+</div>
+<div class="project-description">
+    <img src="/assets/img/schooldance/2.png" alt="Описание изображения" style="max-width: 100%; height: auto;" class="zoomable" onclick="openModal(this)">
+</div>
+<div class="project-description">
+    <img src="/assets/img/schooldance/3.png" alt="Описание изображения" style="max-width: 100%; height: auto;" class="zoomable" onclick="openModal(this)">
+</div>
+
+<script>
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
+<!-- Модальное окно для увеличенного изображения -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+function openModal(img) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+}
+
+function closeModal() {
+  var modal = document.getElementById("imageModal");
+  modal.style.display = "none";
+}
+</script>
+
 <h3>Использованное программное обеспечение:</h3>
 <div class="software-list">
     <p><img src="/assets/img/icon/photoshop.png" alt="photoshop icon" style="width:20px;"> Adobe Photoshop</p>
@@ -27,7 +65,7 @@ usemathjax: true # Включение поддержки математичес�
   display: none;
   position: fixed;
   z-index: 999;
-  padding-top: 50px;
+  padding-top: 200px;
   left: 0;
   top: 0;
   width: 100%;
