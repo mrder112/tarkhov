@@ -1,32 +1,32 @@
 ---
 layout: post # Шаблон страницы
-title:  "Проект разработки газеты" # Заголовок поста
-date:   2019-08-16 09:29:20 +0700 # Дата и время публикации
+title:  "Проект разработки сайта ArtLab" # Заголовок поста
+date:   2020-08-16 09:29:20 +0700 # Дата и время публикации
 categories: jekyll update # Категории поста
 usemathjax: true # Включение поддержки математических формул
 ---
 
 
 <div style="text-align: center;">
-<h2>Работа над созданием газеты</h2>
+<h2>Работа над созданием сайта</h2>
 
-<p>В данном проекте была разработана газета на тему типографии, в ней были представлены различные виды печати и их особенности. Была задача сделать газету максимально красивой и интересной, соблюсти правила верстки.</p>
+<p>В данном проекте я занимался разработкой сайта для определенной компании.</p>
 </div>
-Скачать полную версию газеты можно по ссылке <a href="https://t.me/pavel_tarkhov/95" target="_blank">в Telegram</a>
-<figure>
-<img src="/assets\img\gazeta/2-01.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-<figure>
-<img src="/assets\img\gazeta/1.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
-</figure>
-Скачать полную версию газеты можно по ссылке <a href="https://t.me/pavel_tarkhov/95" target="_blank">в Telegram</a>
+<p>Пк версия сайта</p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+    <iframe src="https://vk.com/video_ext.php?oid=159132079&id=456244335&hd=1&hash=c6020add1744c16c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+</div>
 
-<!-- Модальное окно для увеличенного изображения -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modalImage">
 </div>
-
+<h3>Использованное программное обеспечение:</h3>
+<div class="software-list">
+    <p><img src="/assets/img/icon/photoshop.png" alt="photoshop icon" style="width:20px;"> Adobe Photoshop</p>
+    <p><img src="/assets/img/icon/adobexd.png" alt="adobeXD icon" style="width:20px;"> Adobe XD</p>
+    <p><img src="/assets/img/icon/illustrator.png" alt="adobeXD icon" style="width:20px;"> Adobe Illustrator</p>
+</div>
 <style>
 .modal {
   display: none;
