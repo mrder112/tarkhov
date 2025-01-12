@@ -1,11 +1,11 @@
 # Основные настройки сайта
 title: Pavel Tarkhov # название сайта
 description: >- # описание сайта
-  He's writing in Bahasa about web technology and experience as a journal 
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
+  Это мой сайт с портфолио моих работ в разных отраслях связанных с дизайном, видеомонтажом и 3D моделированием.
+   <a href="https://tarkhov.pe/" target="_blank" rel="noopener">Site</a>.
 lang: en-US # язык сайта по умолчанию
 timezone: Asia/Jakarta # часовой пояс
-image: assets/img/ogp.png # изображение для Open Graph протокола
+image: /assets/img/ogp1.png # изображение для Open Graph протокола
 mode: dark # тема оформления "dark" или "light"
 
 # Настройки профиля
@@ -14,15 +14,16 @@ author:
   bio: >- # описание автора
     Это мой сайт с портфолио моих работ в разных отраслях связанных с дизайном, видеомонтажом и 3D моделированием.
     <a href="https://t.me/pavel_tarkhov" target="_blank" rel="noopener">Мой Telegram</a>.
+  
   username: username # общее имя пользователя
   github: github_username # имя пользователя GitHub
   Telegram: pavel_tarkhov # имя пользователя Telegram
   facebook: facebook_username # имя пользователя Facebook
-  email: your-email@email.com # адрес электронной почты
+  email: tarkhov.p@yandex.ru # адрес электронной почты
   avatar: /assets/img/avatar.jpg # путь к аватару
 
 # Настройки URL
-url: "https://klise.now.sh" # основной URL сайта
+url: "https://tarkhov.pe/" # основной URL сайта
 baseurl: # базовый URL (если сайт в подкаталоге)
 permalink: /:title/ # формат ссылок на посты
 google_analytics: # ID Google Analytics
