@@ -29,6 +29,14 @@ usemathjax: true # Включение поддержки математичес�
 <img src="/assets\img\biomakers/3.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
 </figure>
 
+<script>
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
+
 <!-- Модальное окно для увеличенного изображения -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>

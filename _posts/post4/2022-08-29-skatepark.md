@@ -16,36 +16,55 @@ usemathjax: true # Включение поддержки математичес�
 
 <div class="gallery">
   <figure>
-    <img src="/assets\img\skatepark/1.jpg" alt="Общий вид скейтпарка" class="zoomable" onclick="openModal(this)">
+    <img src="/assets\img\skatepark/1.jpg" alt="Общий вид скейтпарка" class="zoomable" onclick="toggleModal(this)">
     <figcaption>Общий вид скейтпарка</figcaption>
   </figure>
 
   <figure>
-    <img src="/assets\img\skatepark/2.jpg" alt="Рампа и перила" class="zoomable" onclick="openModal(this)">
+    <img src="/assets\img\skatepark/2.jpg" alt="Рампа и перила" class="zoomable" onclick="toggleModal(this)">
     <figcaption>Рампа и перила</figcaption>
   </figure>
 
   <figure>
-    <img src="/assets\img\skatepark/3.jpg" alt="Зона для трюков" class="zoomable" onclick="openModal(this)">
+    <img src="/assets\img\skatepark/3.jpg" alt="Зона для трюков" class="zoomable" onclick="toggleModal(this)">
     <figcaption>Зона для трюков</figcaption>
   </figure>
 
   <figure>
-    <img src="/assets\img\skatepark/4.jpg" alt="Детали конструкции" class="zoomable" onclick="openModal(this)">
+    <img src="/assets\img\skatepark/4.jpg" alt="Детали конструкции" class="zoomable" onclick="toggleModal(this)">
     <figcaption>Детали конструкции</figcaption>
   </figure>
 
   <figure>
-    <img src="/assets\img\skatepark/5.jpg" alt="Вечернее освещение" class="zoomable" onclick="openModal(this)">
+    <img src="/assets\img\skatepark/5.jpg" alt="Вечернее освещение" class="zoomable" onclick="toggleModal(this)">
     <figcaption>Вечернее освещение</figcaption>
   </figure>
 
   <figure>
-    <img src="/assets\img\skatepark/6.jpg" alt="Общий план территории" class="zoomable" onclick="openModal(this)">
+    <img src="/assets\img\skatepark/6.jpg" alt="Общий план территории" class="zoomable" onclick="toggleModal(this)">
     <figcaption>Общий план территории</figcaption>
   </figure>
 </div>
 
+<script>
+function toggleModal(img) {
+  var modal = document.getElementById("imageModal");
+  var modalImg = document.getElementById("modalImage");
+  if (modal.style.display === "block" && modalImg.src === img.src) {
+    closeModal();
+  } else {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+}
+</script>
+<script>
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
 <!-- Модальное окно для увеличенного изображения -->
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>

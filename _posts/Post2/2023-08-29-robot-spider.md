@@ -31,13 +31,19 @@ usemathjax: true # Включение поддержки математичес�
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modalImage">
 </div>
-
+<script>
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+</script>
 <style>
 .modal {
   display: none;
   position: fixed;
   z-index: 999;
-  padding-top: 200px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;

@@ -13,10 +13,18 @@ usemathjax: true # Включение поддержки математичес�
 <p>В данном проекте я занимался разработкой сайта для определенной компании.</p>
 </div>
 <p>Пк версия сайта</p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-    <iframe src="https://vk.com/video_ext.php?oid=159132079&id=456244335&hd=1&hash=c6020add1744c16c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <iframe src="https://www.youtube.com/embed/crJ_gEejWHs?si=FUbR9iBYwmRv3h6f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
 </div>
-
+<figure>
+<img src="/assets\img\artlab/1.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+</figure>
+<figure>
+<img src="/assets\img\artlab/2.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+</figure>
+<figure>
+<img src="/assets\img\artlab/3.jpg" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
+</figure>
 <div id="imageModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modalImage">
@@ -32,7 +40,7 @@ usemathjax: true # Включение поддержки математичес�
   display: none;
   position: fixed;
   z-index: 999;
-  padding-top: 50px;
+  padding-top: 150px;
   left: 0;
   top: 0;
   width: 100%;
