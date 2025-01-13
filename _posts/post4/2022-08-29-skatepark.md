@@ -13,7 +13,7 @@ usemathjax: true # Включение поддержки математичес�
 <p>В данном проекте была разработана детальная 3D визуализация современного скейтпарка. 
 Особое внимание было уделено реалистичности освещения и материалов.</p>
 </div>
-
+<iframe width="100%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7v1Ml?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"></iframe>
 <div class="gallery">
   <figure>
     <img src="/assets\img\skatepark/1.jpg" alt="Общий вид скейтпарка" class="zoomable" onclick="toggleModal(this)">

@@ -16,6 +16,7 @@ usemathjax: true # Включение поддержки математичес�
 <figure>
 <img src="/assets\img\classroom/2.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
 </figure>
+<iframe width="100%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7v1JF?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"></iframe>
 <figure>
 <img src="/assets\img\classroom/3.png" alt="Титульная картинка" class="zoomable" onclick="openModal(this)">
 </figure>
