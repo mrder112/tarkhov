@@ -7,7 +7,63 @@
     <span>© {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
   </small>
 </footer>
+
+<style>
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  padding: 20px 0;
+}
+
+.footer-logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-logo-link {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo-link:hover {
+  opacity: 0.8;
+}
+</style>
+
+<style>
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer-logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.footer-logo-link {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.footer-logo-link:hover {
+  opacity: 0.8;
+}
+</style>
+
 <script src="/assets/js/main.js" defer="defer"></script>
+<script src="/assets/js/gallery.js" defer="defer"></script>
 {%- if site.google_analytics -%}
   <!-- Google tag (gtag.js) -->
   <script
